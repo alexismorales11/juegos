@@ -1,6 +1,32 @@
+*{
+    margin: 0;
+    background-color: aqua;
+    color: black;
+}
 body 
 {
     color: deeppink;
     text-align: center;
     font-family: "Arial";
+}
+#container-main{
+    border: 15px double;
+    display: inline-block;
+}
+#header-main{
+    margin: 5%;
+    padding: none;
+    display: block;
+    border: 5px solid;
+}
+#header-main h1{
+    font-size: 50px;
+}
+#descripcion-blog-post{
+    margin: 5%;
+    border: 1px dashed;
+    display: inline-block;
+}
+#container-main-home{
+    margin: 25px 30%;
 }
