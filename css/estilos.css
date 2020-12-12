@@ -1,11 +1,10 @@
 *{
     margin: 0;
-    background-color: aqua;
+    /*background-color: aqua;*/
     color: black;
 }
 body 
 {
-    color: deeppink;
     text-align: center;
     font-family: "Arial";
 }
@@ -14,6 +13,7 @@ body
     display: inline-block;
 }
 #header-main{
+    position: relative;
     margin: 5%;
     padding: none;
     display: block;
@@ -28,5 +28,122 @@ body
     display: inline-block;
 }
 #container-main-home{
-    margin: 25px 30%;
+    margin: 25px auto;
+    max-width: 900px;
+    position: relative;
+    display: flex;
+}
+.img-logo-navbar{
+    width: 200px;
+}
+.logo-header-menu-inicio{
+    margin: 1px 10px;
+}
+.header-navbar{
+    position: relative;
+    display: flex;  
+    padding: 5px 15%;
+    justify-content: inherit;
+    width: 1000px;
+    margin: 0 auto;
+    align-items: inherit;
+    height: inherit;
+    flex-wrap: inherit;
+    background: red;
+}
+.contenedor{
+      margin: auto;
+}
+header{
+    background: red;
+}
+.opcion-navbar{
+    display: inline-block;
+    padding: 15px;
+    margin: auto;
+  /*  border: solid 1px black;
+    border-radius: 5px;*/
+    
+}
+.opcion-navbar:hover{
+      /*  
+      opacity: .4;
+      filter: grayscale(1);
+      filter: contrast(1);
+      filter: brightness(.4);
+      filter: blur(0);
+      */
+  /*cursor: wait;*/
+  /*cursor: no-drop;*/
+  /*cursor: text;*/
+  /*cursor: pointer;*/
+  
+  /*
+  cursor: move;
+  cursor: help;
+  */
+  background: rgb(255, 59, 59) ;
+}
+@media Screen and (max-width: 1024px){
+ .img-logo-navbar{
+    width: 175px;
+}
+.header-navbar{
+    padding: 0;
+}
+.logo-header-menu-inicio{
+    margin:auto;
+}
+}
+@media Screen and (max-width: 768px){
+ 
+    .img-logo-navbar{
+        width: 200px;
+    }
+}
+@media Screen and (max-width: 480px){
+        .header-navbar{
+            margin: auto;
+            display: block;
+            }   
+            .img-logo-navbar{
+                width: 300px;
+                margin: 15px;
+            }
+            .logo-header-menu-inicio {
+                margin: auto;
+            }
+            .opcion-navbar{
+                display: block;
+                padding: 15px;
+                margin: auto;
+                text-align: center;
+              /*  border: solid 1px black;
+                border-radius: 5px;*/
+            }
+            p{
+                font-size: 50px;
+    }
+}
+@media Screen and (max-width: 320px){
+.header-navbar{
+    margin: auto;
+    display: block;
+    }   
+    .img-logo-navbar{
+        width: 300px;
+        margin: 15px;
+    }
+    .logo-header-menu-inicio {
+        margin: auto;
+    }
+    .opcion-navbar{
+        display: block;
+        padding: 15px;
+        margin: auto;
+        text-align: center;
+      /*  border: solid 1px black;
+        border-radius: 5px;*/
+        
+    }
 }
